@@ -49,6 +49,10 @@ namespace FORCA
             this.BtnChutarPalavra = new System.Windows.Forms.Button();
             this.TxtPalavra = new System.Windows.Forms.TextBox();
             this.LblContador = new System.Windows.Forms.Label();
+            this.BtnModoFacil = new System.Windows.Forms.Button();
+            this.BtnModoMedio = new System.Windows.Forms.Button();
+            this.BtnModoDificil = new System.Windows.Forms.Button();
+            this.LblArrayPalavrasForca = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -237,7 +241,7 @@ namespace FORCA
             this.BtnDica.BackColor = System.Drawing.Color.Olive;
             this.BtnDica.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnDica.ForeColor = System.Drawing.Color.White;
-            this.BtnDica.Location = new System.Drawing.Point(542, 6);
+            this.BtnDica.Location = new System.Drawing.Point(261, 201);
             this.BtnDica.Name = "BtnDica";
             this.BtnDica.Size = new System.Drawing.Size(35, 23);
             this.BtnDica.TabIndex = 25;
@@ -252,7 +256,7 @@ namespace FORCA
             this.LblDica2.AutoSize = true;
             this.LblDica2.BackColor = System.Drawing.Color.Transparent;
             this.LblDica2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDica2.Location = new System.Drawing.Point(578, 12);
+            this.LblDica2.Location = new System.Drawing.Point(297, 207);
             this.LblDica2.Name = "LblDica2";
             this.LblDica2.Size = new System.Drawing.Size(61, 13);
             this.LblDica2.TabIndex = 26;
@@ -296,12 +300,65 @@ namespace FORCA
             this.LblContador.TabIndex = 27;
             this.LblContador.Text = "0";
             // 
+            // BtnModoFacil
+            // 
+            this.BtnModoFacil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnModoFacil.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnModoFacil.ForeColor = System.Drawing.Color.White;
+            this.BtnModoFacil.Location = new System.Drawing.Point(445, 6);
+            this.BtnModoFacil.Name = "BtnModoFacil";
+            this.BtnModoFacil.Size = new System.Drawing.Size(75, 23);
+            this.BtnModoFacil.TabIndex = 28;
+            this.BtnModoFacil.Text = "FÁCIL";
+            this.BtnModoFacil.UseVisualStyleBackColor = false;
+            this.BtnModoFacil.Click += new System.EventHandler(this.BtnModoFacil_Click);
+            // 
+            // BtnModoMedio
+            // 
+            this.BtnModoMedio.BackColor = System.Drawing.Color.SeaGreen;
+            this.BtnModoMedio.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnModoMedio.ForeColor = System.Drawing.Color.White;
+            this.BtnModoMedio.Location = new System.Drawing.Point(525, 6);
+            this.BtnModoMedio.Name = "BtnModoMedio";
+            this.BtnModoMedio.Size = new System.Drawing.Size(75, 23);
+            this.BtnModoMedio.TabIndex = 29;
+            this.BtnModoMedio.Text = "MÉDIO";
+            this.BtnModoMedio.UseVisualStyleBackColor = false;
+            this.BtnModoMedio.Click += new System.EventHandler(this.BtnModoMedio_Click);
+            // 
+            // BtnModoDificil
+            // 
+            this.BtnModoDificil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnModoDificil.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnModoDificil.ForeColor = System.Drawing.Color.White;
+            this.BtnModoDificil.Location = new System.Drawing.Point(605, 6);
+            this.BtnModoDificil.Name = "BtnModoDificil";
+            this.BtnModoDificil.Size = new System.Drawing.Size(75, 23);
+            this.BtnModoDificil.TabIndex = 30;
+            this.BtnModoDificil.Text = "DIFÍCIL";
+            this.BtnModoDificil.UseVisualStyleBackColor = false;
+            this.BtnModoDificil.Click += new System.EventHandler(this.BtnModoDificil_Click);
+            // 
+            // LblArrayPalavrasForca
+            // 
+            this.LblArrayPalavrasForca.AutoSize = true;
+            this.LblArrayPalavrasForca.ForeColor = System.Drawing.Color.Transparent;
+            this.LblArrayPalavrasForca.Location = new System.Drawing.Point(78, 305);
+            this.LblArrayPalavrasForca.Name = "LblArrayPalavrasForca";
+            this.LblArrayPalavrasForca.Size = new System.Drawing.Size(10, 15);
+            this.LblArrayPalavrasForca.TabIndex = 31;
+            this.LblArrayPalavrasForca.Text = " ";
+            // 
             // FORCA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(700, 320);
+            this.Controls.Add(this.LblArrayPalavrasForca);
+            this.Controls.Add(this.BtnModoDificil);
+            this.Controls.Add(this.BtnModoMedio);
+            this.Controls.Add(this.BtnModoFacil);
             this.Controls.Add(this.LblContador);
             this.Controls.Add(this.TxtPalavra);
             this.Controls.Add(this.BtnChutarPalavra);
@@ -353,6 +410,10 @@ namespace FORCA
         private System.Windows.Forms.Button BtnChutarPalavra;
         private System.Windows.Forms.TextBox TxtPalavra;
         private System.Windows.Forms.Label LblContador;
+        private System.Windows.Forms.Button BtnModoFacil;
+        private System.Windows.Forms.Button BtnModoMedio;
+        private System.Windows.Forms.Button BtnModoDificil;
+        private System.Windows.Forms.Label LblArrayPalavrasForca;
     }
 }
 

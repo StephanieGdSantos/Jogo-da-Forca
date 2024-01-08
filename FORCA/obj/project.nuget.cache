@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "L/zpL4XJO9J6yjLE3eR4SvqD6wO2C73DvFypvHuwZ6HDwTa9yalzoV/biddUc/mHm9CuTrk4OlX9TNX4rU4a9A==",
+  "dgSpecHash": "t4Ybr9zNe1bHpFk0/BhfAUIhDwGw9JwECktP5Ejbbddm5eX+aZbtatMuAczyWU0XliRUCOQPykGGpYEiqpxSHA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gomes\\Desktop\\Stephanie\\ESTUDOS\\C#\\FORCA\\FORCA\\FORCA.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\gomes\\GITHUB\\Jogo-da-Forca\\FORCA\\FORCA.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gomes\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }

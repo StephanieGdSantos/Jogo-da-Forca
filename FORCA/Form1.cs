@@ -19,24 +19,40 @@ namespace FORCA
 
         private void BtnJogar_Click(object sender, EventArgs e)
         {
-            string[] palavras = { "UVA", "LARANJA", "PERA", "AMORA", "MIRTILO", "GRUMIXAMA", 
-            "TORANJA", "BANANA", "MELANCIA", "FRAMBOESA", "ABACAXI", "AMEIXA", "CARAMBOLA", 
-            "ACEROLA", "MANGA", "CACAU", "ABACATE"};
-            Random numeroAleatorio = new Random();
-            int posicao = numeroAleatorio.Next(17);
-            string palavraEscolhida = palavras[posicao];
-            LblPalavraForca.Text = "_";
-            LblDica.Text = palavraEscolhida;
-            for (int i = 0; i < palavraEscolhida.Length-1; i++)
+            string[] palavras = LblArrayPalavrasForca.Text.Split(", ");
+            if (palavras[0] == " ")
             {
-                LblPalavraForca.Text += "_";
+                MessageBox.Show("É necessário selecionar um modo fácil, médio " +
+                    "ou difícil antes de começar o jogo.", "Selecione um modo de jogo");
+                BtnModoFacil.Focus();
             }
-            TornarInvisivel(LblCabeca, LblTronco, LblBracoEsquerdo, LblBracoDireito,
-                LblPernaEsquerda, LblPernaDireita);
-            TornarVisivel(TxtLetra, TxtPalavra, BtnLetra, BtnChutarPalavra);
-            LblLetras.Text = " ";
-            TxtLetra.ReadOnly = false;
-            TxtPalavra.ReadOnly = false;
+            else
+            {
+                LblDica2.Visible = false;
+                Random numeroAleatorio = new Random();
+                int posicao = numeroAleatorio.Next(palavras.Length);
+                string palavraEscolhida = palavras[posicao];
+                LblPalavraForca.Text = "_";
+                LblDica.Text = palavraEscolhida;
+                for (int i = 0; i < palavraEscolhida.Length-1; i++)
+                {
+                    if (palavraEscolhida[i] == char.Parse(" "))
+                    {
+                        LblPalavraForca.Text += " ";
+                    }
+                    else
+                    {
+                        LblPalavraForca.Text += "_";
+                    }
+                }
+                TornarInvisivel(LblCabeca, LblTronco, LblBracoEsquerdo, LblBracoDireito,
+                    LblPernaEsquerda, LblPernaDireita);
+                TornarVisivel(TxtLetra, TxtPalavra, BtnLetra, BtnChutarPalavra);
+                LblLetras.Text = " ";
+                TxtLetra.ReadOnly = false;
+                TxtPalavra.ReadOnly = false;
+            }
+
         }
         
         static void TornarInvisivel(Label LblCabeca, Label LblTronco, Label LblBracoEsquerdo, 
@@ -231,6 +247,36 @@ namespace FORCA
             {
                 BtnChutarPalavra.PerformClick();
             }
+        }
+
+        private void BtnModoFacil_Click(object sender, EventArgs e)
+        {
+            LblArrayPalavrasForca.Text = "UVA, LARANJA, PERA, AMORA, MIRTILO, GRUMIXAMA, " +
+                "TORANJA, BANANA, MELANCIA, FRAMBOESA, ABACAXI, AMEIXA, CARAMBOLA, " +
+                "ACEROLA, MANGA, CACAU, ABACATE";
+            LblDica2.Visible = false;
+            LblDica2.Text = "É uma fruta.";
+            BtnJogar.PerformClick();
+        }
+
+        private void BtnModoMedio_Click(object sender, EventArgs e)
+        {
+            LblArrayPalavrasForca.Text = "VIOLETA, BORDO, FUCHSIA, BRONZE, CARMESIM, CIANO, " +
+                "COBRE, DOURADO, HERBAL, INDIGO, MALVA, MAGENTA, OLIVA, PARDO, PURPURA, " +
+                "TERRACOTA";
+            LblDica2.Visible = false;
+            LblDica2.Text = "É uma cor.";
+            BtnJogar.PerformClick();
+        }
+
+        private void BtnModoDificil_Click(object sender, EventArgs e)
+        {
+            LblArrayPalavrasForca.Text = "BED, MORNING, CONGRATULATIONS, FRIEND, DIED, " +
+                "MURDERED, FATHER, PLACE, THURSDAY, HAMSTER, PURPLE, LIBRARY, BLUEBERRY, " +
+                "BODY, HEADER, FORK";
+            LblDica2.Visible = false;
+            LblDica2.Text = "É uma palavra em inglês.";
+            BtnJogar.PerformClick();
         }
     }
 }

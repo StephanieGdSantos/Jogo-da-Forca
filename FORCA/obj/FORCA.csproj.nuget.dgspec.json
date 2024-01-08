@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gomes\\Desktop\\Stephanie\\ESTUDOS\\C#\\FORCA\\FORCA\\FORCA.csproj": {}
+    "C:\\Users\\gomes\\GITHUB\\Jogo-da-Forca\\FORCA\\FORCA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gomes\\Desktop\\Stephanie\\ESTUDOS\\C#\\FORCA\\FORCA\\FORCA.csproj": {
+    "C:\\Users\\gomes\\GITHUB\\Jogo-da-Forca\\FORCA\\FORCA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gomes\\Desktop\\Stephanie\\ESTUDOS\\C#\\FORCA\\FORCA\\FORCA.csproj",
+        "projectUniqueName": "C:\\Users\\gomes\\GITHUB\\Jogo-da-Forca\\FORCA\\FORCA.csproj",
         "projectName": "FORCA",
-        "projectPath": "C:\\Users\\gomes\\Desktop\\Stephanie\\ESTUDOS\\C#\\FORCA\\FORCA\\FORCA.csproj",
+        "projectPath": "C:\\Users\\gomes\\GITHUB\\Jogo-da-Forca\\FORCA\\FORCA.csproj",
         "packagesPath": "C:\\Users\\gomes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gomes\\Desktop\\Stephanie\\ESTUDOS\\C#\\FORCA\\FORCA\\obj\\",
+        "outputPath": "C:\\Users\\gomes\\GITHUB\\Jogo-da-Forca\\FORCA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,10 +49,17 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.32, 3.1.32]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -61,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
