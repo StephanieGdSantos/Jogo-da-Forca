@@ -1,0 +1,16 @@
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\bin\Release\netcoreapp3.1\FORCA.exe
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\bin\Release\netcoreapp3.1\FORCA.deps.json
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\bin\Release\netcoreapp3.1\FORCA.runtimeconfig.json
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\bin\Release\netcoreapp3.1\FORCA.runtimeconfig.dev.json
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\bin\Release\netcoreapp3.1\FORCA.dll
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\bin\Release\netcoreapp3.1\FORCA.pdb
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\obj\Release\netcoreapp3.1\FORCA.csproj.AssemblyReference.cache
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\obj\Release\netcoreapp3.1\FORCA.FORCA.resources
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\obj\Release\netcoreapp3.1\FORCA.csproj.GenerateResource.cache
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\obj\Release\netcoreapp3.1\FORCA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\obj\Release\netcoreapp3.1\FORCA.AssemblyInfoInputs.cache
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\obj\Release\netcoreapp3.1\FORCA.AssemblyInfo.cs
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\obj\Release\netcoreapp3.1\FORCA.csproj.CoreCompileInputs.cache
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\obj\Release\netcoreapp3.1\FORCA.dll
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\obj\Release\netcoreapp3.1\FORCA.pdb
+C:\Users\gomes\GITHUB\Jogo-da-Forca\FORCA\obj\Release\netcoreapp3.1\FORCA.genruntimeconfig.cache
