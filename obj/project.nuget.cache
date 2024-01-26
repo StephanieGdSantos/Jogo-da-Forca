@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JBtF0MBXHQNIDpJAXr+nt6n/A7XGzAPF1OYtjeYfmbUWQQlhkqN8h3a4QRa1WCMsoFA0x1oTC7EV24XItt6hYQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gomes\\Desktop\\Stephanie\\ESTUDOS\\C#\\FORCA\\FORCA\\FORCA.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gomes\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}

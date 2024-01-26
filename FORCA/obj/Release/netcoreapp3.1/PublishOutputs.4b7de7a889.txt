@@ -1,5 +1,0 @@
-C:\Users\gomes\GITHUB\Jogo-da-Forca\Download\FORCA.exe
-C:\Users\gomes\GITHUB\Jogo-da-Forca\Download\FORCA.dll
-C:\Users\gomes\GITHUB\Jogo-da-Forca\Download\FORCA.deps.json
-C:\Users\gomes\GITHUB\Jogo-da-Forca\Download\FORCA.runtimeconfig.json
-C:\Users\gomes\GITHUB\Jogo-da-Forca\Download\FORCA.pdb
