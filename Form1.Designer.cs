@@ -1,7 +1,6 @@
-﻿
-namespace FORCA
+﻿namespace Jogo_da_Forca
 {
-    partial class FORCA
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,6 +28,7 @@ namespace FORCA
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.TxtLetra = new System.Windows.Forms.TextBox();
             this.LblPalavraForca = new System.Windows.Forms.Label();
             this.BtnJogar = new System.Windows.Forms.Button();
@@ -378,15 +378,15 @@ namespace FORCA
             this.Controls.Add(this.BtnLetra);
             this.Controls.Add(this.BtnJogar);
             this.Controls.Add(this.TxtLetra);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "FORCA";
+            this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Forca";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -417,4 +417,3 @@ namespace FORCA
         private System.Windows.Forms.Label LblArrayPalavrasForca;
     }
 }
-

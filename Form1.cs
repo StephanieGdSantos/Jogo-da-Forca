@@ -1,18 +1,8 @@
-ï»¿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace FORCA
+namespace Jogo_da_Forca
 {
-    public partial class FORCA : Form
+    public partial class Form1 : Form
     {
-        public FORCA()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -23,8 +13,8 @@ namespace FORCA
             string[] palavras = LblArrayPalavrasForca.Text.Split(", ");
             if (palavras[0] == " ")
             {
-                MessageBox.Show("Ã‰ necessÃ¡rio selecionar um modo fÃ¡cil, mÃ©dio " +
-                    "ou difÃ­cil antes de comeÃ§ar o jogo.", "Selecione um modo de jogo");
+                MessageBox.Show("É necessário selecionar um modo fácil, médio " +
+                    "ou difícil antes de começar o jogo.", "Selecione um modo de jogo");
                 BtnModoFacil.Focus();
             }
             else
@@ -196,7 +186,7 @@ namespace FORCA
         {
             if (forca == palavraCerta)
             {
-                MessageBox.Show("ParabÃ©ns! VocÃª venceu :D \nSe quiser jogar novamente, pressione 'Nova palavra'.");
+                MessageBox.Show("Parabéns! Você venceu :D \nSe quiser jogar novamente, pressione 'Nova palavra'.");
                 TxtChuteLetra.ReadOnly = true;
                 TxtChutePalavra.ReadOnly = true;
                 BtnJogar.Focus();
@@ -208,7 +198,7 @@ namespace FORCA
         {
             if (quantidadeLetrasErradas == 6)
             {
-                MessageBox.Show("Infelizmente, vocÃª perdeu :( \nMas nÃ£o desista," +
+                MessageBox.Show("Infelizmente, você perdeu :( \nMas não desista," +
                     " tente uma nova palavra.");
                 TxtChuteLetra.ReadOnly = true;
                 TxtChutePalavra.ReadOnly = true;
@@ -257,7 +247,7 @@ namespace FORCA
                 "TORANJA, BANANA, MELANCIA, FRAMBOESA, ABACAXI, AMEIXA, CARAMBOLA, " +
                 "ACEROLA, MANGA, CACAU, ABACATE";
             LblDica2.Visible = false;
-            LblDica2.Text = "Ã‰ uma fruta.";
+            LblDica2.Text = "É uma fruta.";
             BtnJogar.PerformClick();
         }
 
@@ -267,7 +257,7 @@ namespace FORCA
                 "COBRE, DOURADO, HERBAL, INDIGO, MALVA, MAGENTA, OLIVA, PARDO, PURPURA, " +
                 "TERRACOTA";
             LblDica2.Visible = false;
-            LblDica2.Text = "Ã‰ uma cor.";
+            LblDica2.Text = "É uma cor.";
             BtnJogar.PerformClick();
         }
 
@@ -277,7 +267,7 @@ namespace FORCA
                 "MURDERED, FATHER, PLACE, THURSDAY, HAMSTER, PURPLE, LIBRARY, BLUEBERRY, " +
                 "BODY, HEADER, FORK";
             LblDica2.Visible = false;
-            LblDica2.Text = "Ã‰ uma palavra em inglÃªs.";
+            LblDica2.Text = "É uma palavra em inglês.";
             BtnJogar.PerformClick();
         }
     }
